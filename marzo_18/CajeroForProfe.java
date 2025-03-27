@@ -11,11 +11,10 @@ public class CajeroForProfe {
     int cantProd=0;
     String nombreProducto = "";
     int cantidad = 0;
-    // preguntar al usuario la cantidad de productos que va a comprar
+    
     System.out.println("Digite la cantidad de productos que va a comprar");
     cantProd = Integer.parseInt(in.readLine());
-    //datos del primer producto
-    // I
+    
     System.out.println("-------- DETALLE DE LA COMPRA-----");
     System.out.println("|Nombre producto  | Cantidad | Precio |");
 
@@ -29,8 +28,7 @@ public class CajeroForProfe {
       precioFinal += precio * cantidad;
     }
 
-
     System.out.println("-------- FIN DE LÍNEA DE PRODUCTOS");
-    System.out.println("Digite el precio del primer producto");
+    System.out.println("El monto total de la factura es " + precioFinal);
   }
 }
